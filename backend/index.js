@@ -13,7 +13,7 @@ app.use(express.json());
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
     ? [process.env.FRONTEND_URL || 'https://reg-log-fetch-mongo-1.onrender.com'] // Use environment variable
-    : ['http://localhost:3000', 'http://localhost:5174'],
+    : ['http://localhost:3000', 'http://localhost:5175'],
   credentials: true,
   optionsSuccessStatus: 200
 };
