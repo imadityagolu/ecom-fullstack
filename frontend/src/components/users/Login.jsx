@@ -75,7 +75,7 @@ function UserLogin() {
         </a>
       </div>
       <Link to="/client/register" style={{ color: '#6c757d', textDecoration: 'none', display: 'block', marginTop: '1rem' }}>
-        want to sell ? Become client
+        Want to sell ? Become client.
       </Link>
     </div>
   );

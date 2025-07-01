@@ -90,7 +90,7 @@ function ClientRegister() {
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {success && <p style={{ color: 'green' }}>{success}</p>}
       <p>
-        Already have an account? <a href="/client/login">Login</a>
+        Already have an account? <a href="/client/Login">Login</a>
       </p>
     </div>
   );

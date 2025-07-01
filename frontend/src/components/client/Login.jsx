@@ -50,9 +50,9 @@ function ClientLogin() {
       </form>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <p>
-        Don't have an account? <a href="/client/register">Register as Client</a>
+        Don't have an account? <a href="/client/Register">Register as Client</a>
       </p>
-      <Link to="/admit/login">Login as Admin</Link>
+      <Link to="/login">Login as Admin</Link>
     </div>
   );
 }

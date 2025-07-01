@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Header from '../allproducts/Header';
 
 function parseJwt(token) {
   try {
@@ -82,7 +83,9 @@ function UserDashboard() {
   if (loading) return <div>Loading...</div>;
 
   return (
-    <div style={{ maxWidth: '800px', margin: '2rem auto', padding: '2rem' }}>
+    <>
+    <Header />
+    <div style={{ maxWidth: '800px', margin: '3rem auto', padding: '2rem' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
         <h2>Welcome, {userName}!</h2>
         <button 
@@ -153,17 +156,8 @@ function UserDashboard() {
         {profileMessage && <div style={{ color: 'green', marginTop: '1rem' }}>{profileMessage}</div>}
       </div>
 
-      <div style={{ backgroundColor: 'white', padding: '2rem', borderRadius: '8px', boxShadow: '0 0 10px rgba(0,0,0,0.1)' }}>
-        <div style={{ display: 'flex', gap: '1rem' }}>
-          <button onClick={handleGoToCart} style={{ marginBottom: '1rem', padding: '0.5em 1.2em', background: '#007bff', color: '#fff', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 600 }}>
-            My Cart
-          </button>
-          <button onClick={handleGoToWishlist} style={{ marginBottom: '1rem', padding: '0.5em 1.2em', background: '#ffc107', color: '#212529', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 600 }}>
-            My Wishlist
-          </button>
-        </div>
-      </div>
     </div>
+    </>
   );
 }
 

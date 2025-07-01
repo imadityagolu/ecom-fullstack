@@ -94,9 +94,6 @@ function UserRegister() {
       <p style={{ marginTop: '1rem' }}>
         Already have an account? <Link to="/user/login" style={{ color: '#007bff' }}>Login here</Link>
       </p>
-      <Link to="/" style={{ color: '#6c757d', textDecoration: 'none', display: 'block', marginTop: '1rem' }}>
-        Back to Products
-      </Link>
     </div>
   );
 }
